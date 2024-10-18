@@ -1,0 +1,20 @@
+{
+  "name": "wallpaper-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "directus start",
+    "migrate": "directus database migrate:latest",
+    "bootstrap": "directus bootstrap",
+    "snapshot": "directus schema snapshot --yes ./snapshot.yaml",
+    "apply": "directus schema apply --yes ./path/to/snapshot.yaml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "directus": "11.1.1",
+    "sqlite3": "5.1.7"
+  }
+}
