@@ -1,14 +1,14 @@
 {
   "name": "wallpaper-backend",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "directus start",
     "migrate": "directus database migrate:latest",
     "bootstrap": "directus bootstrap",
-    "snapshot": "directus schema snapshot --yes ./snapshot.yaml",
-    "apply": "directus schema apply --yes ./path/to/snapshot.yaml"
+    "snapshot": "directus schema snapshot --yes ./db/snapshot.yaml",
+    "apply": "directus schema apply --yes ./db/snapshot.yaml"
   },
   "keywords": [],
   "author": "",
